@@ -1,8 +1,10 @@
 @media (max-width: 991px) {
 
-    h1, h2{
+    h1,
+    h2 {
         font-size: 2.5rem;
     }
+
     /* Custom Classes */
     .text-content {
         width: 100%;
@@ -15,10 +17,12 @@
     .navbar-brand {
         width: 50%;
     }
+
     .navbar-brand img {
         max-width: 60%;
     }
-    .navbar .navbar-nav{
+
+    .navbar .navbar-nav {
         padding-top: 0.625rem;
         overflow: hidden;
         padding-bottom: 0.75rem;
@@ -30,69 +34,73 @@
         -o-border-radius: 0.188rem;
     }
 
-    .navbar .navbar-nav .nav-link{
+    .navbar .navbar-nav .nav-link {
         color: var(--text-light-gray);
         padding: .625rem;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         padding-right: 0;
     }
 
-    .navbar-toggler:focus{
+    .navbar-toggler:focus {
         box-shadow: none;
-    } 
-    .navbar-toggler-icon{
+    }
+
+    .navbar-toggler-icon {
         color: var(--text-white);
         width: 1em;
         line-height: unset;
         width: 1em;
     }
 
-    .navbar-sticky-on{
+    .navbar-sticky-on {
         color: var(--text-black);
         padding: .5rem 0;
     }
 
-    .navbar-sticky-on{
+    .navbar-sticky-on {
         color: var(--text-black);
     }
 
-    .navbar-sticky-on .navbar-toggler-icon{
+    .navbar-sticky-on .navbar-toggler-icon {
         color: var(--text-black);
     }
 
 
     /* Hero */
-    #home{
+    #home {
         padding-top: 7rem;
     }
-    #home .row{
+
+    #home .row {
         flex-direction: column-reverse;
     }
-    #home .home-text{
+
+    #home .home-text {
         margin-bottom: 2rem;
-        
+
     }
-    #home .home-download-btn{
+
+    #home .home-download-btn {
         justify-content: center;
     }
 
-    #home .home-img{
+    #home .home-img {
         text-align: center;
-        
+
     }
-    #home .home-img img{
+
+    #home .home-img img {
         max-width: 60%;
-        
-    }
-
-    #home .home-text{
 
     }
+
+    #home .home-text {}
 
     /* Counter Section */
-    
-    .single-counter span{
+
+    .single-counter span {
         font-size: 2.5rem;
 
     }
@@ -105,25 +113,40 @@
 
 
 @media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+        line-height: 1.5em;
+    }
 
-    .section-gap{
+
+    .section-gap {
         padding: 50px 0px;
     }
-  
-    #home{
+
+
+    .navbar .navbar-brand img {
+        max-width: 60%;
+        width: 100%;
+    }
+
+
+    #home {
         padding-top: 7rem;
         padding-bottom: 2rem;
     }
-    #home .home-text h2{
-        font-size: 2.438rem;
-        line-height: 3.938rem;
+
+    #home .home-text h2 {
+        font-size: 1.938rem;
+        line-height: 2.938rem;
     }
-    #home .home-download-btn{
+
+    #home .home-download-btn {
         gap: 1rem;
         flex-direction: column;
 
     }
-    #home .home-img{
+
+    #home .home-img {
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -132,49 +155,69 @@
     }
 
 
-    .single-counter span{
-        font-size: 1.8rem;
-    
-    }
-    
-    .single-counter .counter-inner{
+    .single-counter .counter-inner {
         padding-right: 0px;
         padding-left: 0px;
     }
 
 
-    
+    .single-counter span {
+        font-size: 1.8rem;
+
+    }
+
+
+    .promo_section .section-heading h2 {
+        line-height: 2.6rem;
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+
+
 
     /* Features section */
-    #features .margin-top-up{
+    #features .margin-top-up {
         margin-top: -3rem;
     }
-    
-    #features .features-middle{
+
+    #features .features-middle {
         text-align: center;
 
     }
-    
-    .features-img{
+
+    .features-img {
         text-align: center;
         margin-top: 2rem;
     }
-    .features-img img{
+
+    .features-img img {
         max-width: 90%;
-     }
+    }
 
 
-     /* Contact Section */
-     
-#contact .form-control{
-    margin-bottom: 20px;
-}
-     
+    /* Contact Section */
+
+    #contact .form-control {
+        margin-bottom: 20px;
+    }
+
 
 }
 
 @media (max-width: 576px) {
-    .counter-section .single-counter:nth-child(2):after{
+
+    .navbar .navbar-brand img {
+        max-width: 80%;
+        width: 100%;
+    }
+
+
+    .counter-section .single-counter:nth-child(2):after {
         display: none;
     }
 }

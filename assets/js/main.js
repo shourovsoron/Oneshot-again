@@ -1,5 +1,5 @@
-let navMenubar = document.querySelector(".collapse.navbar-collapse");
 let navToggler = document.querySelector(".navbar-toggler");
+let navMenubar = document.querySelector(".collapse.navbar-collapse");
 let collapsing = document.querySelector(".collapsing");
 let collapsed = document.querySelector(".collapsed");
 let showclass = document.querySelector(".show");
@@ -25,16 +25,10 @@ function navMenu() {
     window.onscroll = function () {
         var scroll = document.documentElement.scrollTop;
 
-        if (scroll >= 120) {
+        if (scroll >= 150) {
             navBar.classList.add("navbar-sticky-moved-up")
         } else {
             navBar.classList.remove("navbar-sticky-moved-up")
-        }
-
-        if (scroll >= 500) {
-            navBar.classList.add("navbar-sticky-on")
-        } else {
-            navBar.classList.remove("navbar-sticky-on")
         }
 
         if (scroll >= 250) {
@@ -44,6 +38,14 @@ function navMenu() {
             navBar.classList.remove("navbar-sticky-transitioned")
             scrollTopButton.classList.remove("scrollActive");
         }
+
+        
+        if (scroll >= 500) {
+            navBar.classList.add("navbar-sticky-on")
+        } else {
+            navBar.classList.remove("navbar-sticky-on")
+        }
+
 
 
     }
@@ -77,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     counter("count1", 0, 10, 1000);
-    counter("count2", 100, 23, 1000);
+    counter("count2", 100, 20, 1000);
     counter("count3", 0, 30, 1000);
-    counter("count4", 0, 12, 1000);
+    counter("count4", 40, 15, 1000);
 
 });
 
@@ -88,9 +90,9 @@ document.addEventListener("DOMContentLoaded", function () {
 var swiper = new Swiper('.swiper', {
     loop: true,
     centeredSlides: true,
+    centeredSlides: true,
     effect: "coverflow",
     grabCursor: true,
-    centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,
@@ -107,8 +109,6 @@ var swiper = new Swiper('.swiper', {
     },
     paginationClickable: true,
 
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

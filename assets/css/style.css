@@ -36,15 +36,6 @@
 
 }
 
-:active,
-:hover,
-:focus {
-    outline: 0 !important;
-    outline-offset: 0;
-    box-shadow: none;
-}
-
-
 
 a,
 a:hover {
@@ -56,6 +47,19 @@ a:focus,
 a:active {
     color: var(--text-light-pink) !important;
 }
+
+
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+
+
 
 ul,
 ol {
@@ -70,7 +74,7 @@ html {
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -79,6 +83,11 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background: var(--bg-gradient);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 
@@ -197,8 +206,8 @@ h5{
 /* =======Custom CSS Start========= */
 
 .navbar{
-    position: absolute;
     width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     padding-top: 0;
@@ -303,23 +312,22 @@ h5{
 
 /* Hero Section Design */
 #home{
-    background: rgba(0, 0, 0, 0.1) url(../images/bg.png) no-repeat scroll left center;
-    background-size: cover;
     min-height: 900px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
+    background: rgba(0, 0, 0, 0.1) url(../images/bg.png) no-repeat scroll left center;
+    background-size: cover;
     overflow: hidden;
 }
 
 #home .home-text h2{
     font-size: 3.988rem;
     font-weight: 700;
+    padding: 1.063rem 0;
     line-height: 4.938rem;
     color: var(--text-white);
-    padding: 1.063rem 0;
-
 
 }
 
@@ -400,21 +408,18 @@ h5{
 
 
 /* Counter Section Start */
-.counter-section{
-
-}
 .counter-section .single-counter{
     position: relative;
 }
 
 .counter-section .single-counter::after{
-    position: absolute;
     content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
     width: 0.063rem;
     height: 70%;
     background-color: var(--text-light-gray);
-    top: 50%;
-    right: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -436,6 +441,7 @@ h5{
 .single-counter .counter_item{
     margin-bottom: .8rem;
 }
+
 /* Promo section */
 
 .promo_section .section-heading{
@@ -480,11 +486,11 @@ h5{
     box-shadow: 0px 2rem 5rem rgb(0 0 0 / 12%);
 }
 .single_promo_1{
-    box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 12%);
-    position: relative;
-    overflow: hidden;
     padding: 1.87rem 2.5rem 2.5rem;
     margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 12%);
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
@@ -518,12 +524,13 @@ h5{
 .single_promo_1 .circle-icon{
 
 
-}.single_promo_1 .circle-icon span{
+}
+.single_promo_1 .circle-icon span{
+    padding: 54px 0 54px 0;
+    display: block;
     font-size: 30px;
     background: url("../images/promo-icon-bg.png");
-    padding: 54px 0 54px 0;
     background-repeat: no-repeat;
-    display: block;
     background-position: center center;
 
 
@@ -541,7 +548,13 @@ h5{
 
 /* features Section  */
 
+#features .margin-top-up{
+    margin-top: -25rem;
+}
+
+
 #features .section-title{
+    color: var(--text-white);
     min-height: 800px;
     text-align: left;
     margin-top: 0;
@@ -550,7 +563,7 @@ h5{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: var(--text-white);
+
 }
 #features .section-title h2{
     color: var(--text-white);   
@@ -563,10 +576,6 @@ h5{
 }
 .features-img img{
    max-width: 70%;
-}
-
-#features .margin-top-up{
-    margin-top: -25rem;
 }
 
 #features .single-features{
@@ -599,13 +608,13 @@ h5{
 }
 
 #features .single-features .feature-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 50px;
     width: 50px;
     text-align: center;
     line-height: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
     background: var(--bg-gradient);
     color: var(--text-white);
     border-bottom-left-radius: 25px ;
@@ -644,7 +653,6 @@ h5{
 .swiper-button-prev,
 .swiper-button-next{
     --swiper-navigation-size: 25px;
-    /* color: var(--text-light-black); */
   }
 
   
@@ -656,11 +664,11 @@ h5{
 /* Pricing Section */
 
 .single-price{
-    box-shadow: 0 0.313rem 0.875rem rgb(45 49 54 / 9%);
     text-align: center;
     padding: 2.5rem 0;
     position: relative;
     margin-bottom: 4rem;
+    box-shadow: 0 0.313rem 0.875rem rgb(45 49 54 / 9%);
     transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -669,13 +677,13 @@ h5{
 }
 
 .single-price .month{
-    background: var(--bg-gradient);
-    color: var(--text-white);
     position: absolute;
     padding: 0.625rem;
     top: 1.625rem;
     width: 6.25rem;
     right: -0.5563rem;
+    background: var(--bg-gradient);
+    color: var(--text-white);
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -688,8 +696,8 @@ h5{
     position: absolute;
     top: 0.563rem;
     left: -0.938rem;
-    background: var(--bg-light-pink);
     padding: 0.438rem;
+    background: var(--bg-light-pink);
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -714,13 +722,13 @@ h5{
 }
 
 .single-price .icon-pad .icon-circle{
-    background: var(--bg-light-pink);
-    color: var(--text-white);
     width: 3.75rem;
     height: 3.75rem;
     padding: 1.125rem;
     padding-left: 1rem;
     margin: 0 0 0 -0.063rem;
+    background: var(--bg-light-pink);
+    color: var(--text-white);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -817,12 +825,12 @@ footer.copyright a{
 #scrollUp{
     width: 40px;
     height: 55px;
-    background: var(--bg-gradient);
-    position: fixed;
-    right: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--bg-gradient);
+    position: fixed;
+    right: 2%;
     bottom: 4%;
     display: none;
     z-index: 999;
